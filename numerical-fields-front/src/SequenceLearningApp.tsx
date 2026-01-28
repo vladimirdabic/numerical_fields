@@ -197,7 +197,7 @@ const SequenceLearningApp = () => {
     };
 
     const allCorrect = (): boolean => {
-        for(const [item_id, isCorrect] of Object.entries(feedback)) {
+        for(const [_, isCorrect] of Object.entries(feedback)) {
             if(!isCorrect) return false;
         }
 
